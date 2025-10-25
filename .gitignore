@@ -30,3 +30,13 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Air tmp dir
+tmp/
+
+# tmpl txt files
+*_tmpl.txt
+
+# OS specific files
+.DS_Store
+Thumbs.db
