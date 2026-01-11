@@ -1,0 +1,26 @@
+package components
+
+templ Layout(messages []string) {
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>Contact App</title>
+			<link rel="stylesheet" href="https://unpkg.com/missing.css@1.2.0"/>
+			<link rel="stylesheet" href="/static/site.css"/>
+		</head>
+		<body>
+			<main>
+				<header>
+					<h1>
+						<span class="allcaps">contacts.app</span>
+						<sub-title>A Demo Contacts Application</sub-title>
+					</h1>
+				</header>
+				for message := range messages {
+					<div class="flash">{ message }</div>
+				}
+				{ children... }
+			</main>
+		</body>
+	</html>
+}
